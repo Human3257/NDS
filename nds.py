@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = '7815667814:AAGG13b_wuEIKWyFkBwX4_Ja2egnhVMsC0o'
+TOKEN = '781566781'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Привет! Введи число, и я умножу его на 12/100.")
