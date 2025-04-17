@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Привет! Введи число, и я умножу его на 12/100.")
+    await update.message.reply_text("Введите число")
 
 async def calculate(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
