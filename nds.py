@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def calculate(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         user_input = float(update.message.text)
-        result = (12 / 100) * user_input
+        result = 12 / 112 * user_input
         await update.message.reply_text(f"{user_input} = {result}")
     except ValueError:
         await update.message.reply_text("Пожалуйста, введи корректное число.")
